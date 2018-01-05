@@ -1,0 +1,9 @@
+{
+	"manifest_version": 2,
+	"name": "unixtab",
+	"description": "New Tab Extension that shows the current Unix Timestamp",
+	"version": "1.1",
+	"chrome_url_overrides": {
+		"newtab": "newtab.html"
+	}
+}
