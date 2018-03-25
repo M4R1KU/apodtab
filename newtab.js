@@ -1,6 +1,6 @@
 var API_KEY = 'xIzkrseZNgpS0qsCZZwomBsofc9I5e0FUl3GAjvH';
 var startDate = new Date();
-startDate.setDate(startDate.getDate() - 15);
+startDate.setDate(startDate.getDate() - 5);
 var dateString = startDate.toISOString();
 var apiUrl = 'https://api.nasa.gov/planetary/apod?api_key=' + API_KEY + '&start_date=' + dateString.slice(0, dateString.indexOf('T'));
 

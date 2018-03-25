@@ -1,4 +1,4 @@
-# unixtab
-Very simple New Tab Page Extension for Chrome which shows the current unix timestamp.
+# APOD New Tab
+Chrome Extension which shows one of the last five [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) with some general information and the current time.
 
-![Screenshot](https://i.imgur.com/5MWzlna.png)
+![Screenshot](https://i.imgur.com/Te5h1dK.png)
