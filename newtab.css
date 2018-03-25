@@ -30,7 +30,7 @@ html, body {
     z-index: 0;
 }
 
-#title, #unix-time, #info {
+#title, #time, #info {
     position: absolute;
     background-color: white;
     z-index: 1;
@@ -41,14 +41,42 @@ html, body {
     padding: 0 16px;
 }
 
-#unix-time {
+#time {
     width: 400px;
     text-align: center;
     font-size: 6em;
 }
 
 #info {
-    bottom: 48px;
-    padding: 16px;
-    max-width: 50%;
+    padding: 0 16px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+#info-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+#info-copyright {
+    padding-bottom: 16px;
+}
+
+#info-title-container {
+    display: flex;
+}
+
+#info-title-container img {
+    transition: transform 0.5s ease-in-out;
+}
+
+#info-title {
+    flex-grow: 1;
+}
+
+#info:hover #info-title-container img {
+    transform: rotate(180deg);
 }
