@@ -1,31 +1,20 @@
 <html>
-	<head>
-		<style>
-			@font-face {
-				font-family: "Montserrat";
-				src: url("Montserrat-Regular.ttf");
-			}
-
-			* {	
-				font-family: "Montserrat";
-			}
-
-			#wrapper {
-				height: 100%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-
-			#unix-time {
-				font-size: 4em;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="wrapper">
-			<span id="unix-time"></span>
-		</div>
-	</body>
-	<script src="newtab.js"></script>
+<head>
+    <title>newtab</title>
+    <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+<div id="apod-wrapper">
+    <span id="unix-time">00:00:00</span>
+    <div id="title">
+        <h2>NASA Astronomy Picture of the day</h2>
+    </div>
+    <div id="info">
+        <h3 id="info-title"></h3><br>
+        <span id="info-text"></span><br>
+        <span id="info-copyright"></span>
+    </div>
+</div>
+</body>
+<script src="newtab.js"></script>
 </html>
