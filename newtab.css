@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url("Montserrat-Regular.ttf");
+    font-family: "Noto Sans Mono";
+    src: url("NotoSansMono-Regular.ttf");
 }
 
 * {
-    font-family: "Montserrat", serif;
+    font-family: "Noto Sans Mono", serif;
 }
 
 html, body {
@@ -30,29 +30,45 @@ html, body {
     z-index: 0;
 }
 
-#title, #time, #info {
+#apod-time-and-title, #info {
     position: absolute;
-    background-color: white;
     z-index: 1;
 }
 
-#title {
+#apod-time-and-title {
+    display: flex;
+    justify-content: space-between;
     right: 48px;
+    left: 48px;
+    top: 48px;
+}
+
+#apod-time-and-title > * {
+    flex: 0 0 auto;
+    border-radius: 8px;
+}
+
+#title, #time, #info {
+    background-color: white;
     padding: 0 16px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    text-align: end;
 }
 
 #time {
-    width: 400px;
-    text-align: center;
     font-size: 6em;
 }
 
 #info {
-    padding: 0 16px;
-    width: 100%;
     bottom: 0;
-    left: 0;
+    left: 48px;
+    right: 48px;
     box-sizing: border-box;
+    border-radius: 8px 8px 0 0;
 }
 
 #info-content {
