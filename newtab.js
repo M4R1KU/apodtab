@@ -14,9 +14,13 @@ let infoTitleContainerHeight = document.getElementById('info-title-container').s
 
 let time = document.getElementById('time');
 
-setInterval(function () {
-    time.innerHTML = new Date().toLocaleTimeString();
-}, 1000);
+const LOCALE = 'de';
+
+const setTime = () => time.innerHTML = new Date().toLocaleTimeString(LOCALE);
+
+setTime();
+setInterval(setTime, 1000);
+
 let xmlHttpRequest = new XMLHttpRequest();
 xmlHttpRequest.onreadystatechange = function () {
 
@@ -50,7 +54,7 @@ xmlHttpRequest.onreadystatechange = function () {
         }
 
         let title = document.createElement('h3');
-        title.appendChild(document.createTextNode(new Date(randomImage['date']).toLocaleDateString()));
+        title.appendChild(document.createTextNode(new Date(randomImage['date']).toLocaleDateString(LOCALE)));
         document.getElementById('title').appendChild(title);
     }
 };
